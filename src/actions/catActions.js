@@ -7,7 +7,7 @@ export const fetchCats = () => {
         return response.json();
     })
     .then((responseJSON) => {
-        dispatch({ type: "ADD_CATS", cats: responseJSON.images });
+        setTimeout(dispatch({ type: "ADD_CATS", cats: responseJSON.images }),2000);
 
     });
     };
